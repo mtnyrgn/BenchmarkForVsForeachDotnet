@@ -2,7 +2,7 @@
 
 This project contains Benchmark result of For and Foreach loop on dotnet5 and dotnet6.
 
-#Dotnet5
+## Dotnet5
 ``` ini
 
 BenchmarkDotNet=v0.13.1, OS=Windows 10.0.17763.1935 (1809/October2018Update/Redstone5)
@@ -27,7 +27,7 @@ Intel Core i7-8850H CPU 2.60GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical 
 | **CalculateTotalSumWithForEach** | **10000** | **24,274.88 ns** | **475.168 ns** | **739.780 ns** | **24,189.11 ns** |  **1.00** |    **0.00** |         **-** |
 |     CalculateTotalSumWithFor | 10000 | 13,202.64 ns |  69.419 ns |  64.934 ns | 13,204.79 ns |  0.55 |    0.02 |         - |
 
-#Dotnet6
+## Dotnet6
 ``` ini
 
 BenchmarkDotNet=v0.13.1, OS=Windows 10.0.17763.1935 (1809/October2018Update/Redstone5)
