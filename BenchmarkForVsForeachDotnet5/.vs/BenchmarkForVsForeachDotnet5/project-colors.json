@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "efd54ac3-016a-4344-9c85-28251f87529d": {
+      "ProjectGuid": "efd54ac3-016a-4344-9c85-28251f87529d",
+      "DisplayName": "BenchmarkForVsForeachDotnet5",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

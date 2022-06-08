@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>BenchmarkForVsForeachDotnet5.ForVsForEachBenchmark-20220608-105238</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.17763.1935 (1809/October2018Update/Redstone5)
+Intel Core i7-8850H CPU 2.60GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
+.NET SDK=6.0.300
+  [Host]     : .NET 5.0.14 (5.0.1422.5710), X64 RyuJIT
+  DefaultJob : .NET 5.0.14 (5.0.1422.5710), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>                Method</th><th>N</th><th>  Mean</th><th>Error</th><th>StdDev</th><th>Median</th><th>Ratio</th><th>RatioSD</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>CalculateTotalSumWithForEach</td><td>10</td><td>27.05 ns</td><td>0.558 ns</td><td>0.917 ns</td><td>26.72 ns</td><td>1.00</td><td>0.00</td><td>-</td>
+</tr><tr><td>CalculateTotalSumWithFor</td><td>10</td><td>11.10 ns</td><td>0.095 ns</td><td>0.075 ns</td><td>11.12 ns</td><td>0.41</td><td>0.01</td><td>-</td>
+</tr><tr><td>CalculateTotalSumWithForEach</td><td>100</td><td>252.16 ns</td><td>4.679 ns</td><td>5.388 ns</td><td>252.03 ns</td><td>1.00</td><td>0.00</td><td>-</td>
+</tr><tr><td>CalculateTotalSumWithFor</td><td>100</td><td>129.41 ns</td><td>0.794 ns</td><td>0.743 ns</td><td>128.98 ns</td><td>0.51</td><td>0.01</td><td>-</td>
+</tr><tr><td>CalculateTotalSumWithForEach</td><td>1000</td><td>2,578.21 ns</td><td>52.736 ns</td><td>155.494 ns</td><td>2,620.02 ns</td><td>1.00</td><td>0.00</td><td>-</td>
+</tr><tr><td>CalculateTotalSumWithFor</td><td>1000</td><td>1,311.99 ns</td><td>6.684 ns</td><td>5.581 ns</td><td>1,310.36 ns</td><td>0.51</td><td>0.03</td><td>-</td>
+</tr><tr><td>CalculateTotalSumWithForEach</td><td>10000</td><td>24,274.88 ns</td><td>475.168 ns</td><td>739.780 ns</td><td>24,189.11 ns</td><td>1.00</td><td>0.00</td><td>-</td>
+</tr><tr><td>CalculateTotalSumWithFor</td><td>10000</td><td>13,202.64 ns</td><td>69.419 ns</td><td>64.934 ns</td><td>13,204.79 ns</td><td>0.55</td><td>0.02</td><td>-</td>
+</tr></tbody></table>
+</body>
+</html>
